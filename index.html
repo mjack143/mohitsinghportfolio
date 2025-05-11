@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fdfdfd; color: #1a1a1a; line-height: 1.6; }
+    header, section, footer { padding: 2rem; max-width: 960px; margin: auto; }
+    h1, h2 { margin-bottom: 1rem; font-weight: 700; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; background: #ffffff; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); position: sticky; top: 0; z-index: 1000; }
+    nav a { margin-left: 1.2rem; text-decoration: none; color: #444; font-weight: 600; transition: color 0.2s ease; }
+    nav a:hover { color: #0077ff; }
+    .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to right, #f5f7fa, #e4ecf3); border-radius: 12px; margin-top: 2rem; }
+    .hero h1 { font-size: 2rem; margin-bottom: 1rem; color: #222; }
+    .grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 2rem; }
+    .project-tile { padding: 1rem; border: 1px solid #ddd; border-radius: 10px; background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.2s ease; }
+    .project-tile:hover { transform: translateY(-4px); }
+    ul { margin-top: 1rem; padding-left: 1.5rem; }
+    ul li { margin-bottom: 0.5rem; }
+    footer { text-align: center; padding: 1.5rem; background: #fafafa; color: #666; font-size: 0.9rem; margin-top: 3rem; border-top: 1px solid #eaeaea; }
+    a { color: #0077ff; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>My Portfolio</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Marketing and Social Media Strategist with 10 Years of Experience</h1>
+    <p>Meta, HubSpot & LinkedIn Certified</p>
+    <p>Worked with Agencies like Dentsu and IPG Group</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>As a Group Account Manager with a proven track record in digital marketing and social media management, I bring a strategic mindset and innovative approach to driving business growth and brand success. My journey from a Senior Social Media Manager to my current role has equipped me with a deep understanding of the digital landscape, enabling me to lead teams effectively and deliver impactful campaigns.</p>
+
+    <h3>💡 Expertise & Skills</h3>
+    <ul>
+      <li>Strategic Account Management</li>
+      <li>Digital Marketing & Social Media Strategy</li>
+      <li>Campaign Planning & Execution</li>
+      <li>Team Leadership & Development</li>
+      <li>Data-Driven Decision Making</li>
+      <li>Client Relationship Management</li>
+      <li>Brand Management</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="project-tile">SBI <!-- Add project details/link --></div>
+      <div class="project-tile">Angel One <!-- Add project details/link --></div>
+      <div class="project-tile">CRIF India <!-- Add project details/link --></div>
+      <div class="project-tile">Switzerland Tourism <!-- Add project details/link --></div>
+      <div class="project-tile">Hero Fincorp <!-- Add project details/link --></div>
+      <div class="project-tile">Reliance Mall <!-- Add project details/link --></div>
+      <div class="project-tile">CII <!-- Add project details/link --></div>
+      <div class="project-tile">Tata Group <!-- Add project details/link --></div>
+      <div class="project-tile">ZorroSign <!-- Add project details/link --></div>
+      <div class="project-tile">Infovie Solutions <!-- Add project details/link --></div>
+      <div class="project-tile">Bizcyclone Africa <!-- Add project details/link --></div>
+      <div class="project-tile">BTH Group <!-- Add project details/link --></div>
+      <div class="project-tile">Sales Corp Solutions UK <!-- Add project details/link --></div>
+      <div class="project-tile">Paytabs <!-- Add project details/link --></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mjack143@gmail.com">mjack143@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohitnsingh/" target="_blank">mohitnsingh</a></p>
+    <p><!-- Optional: Add contact form embed code or Calendly widget --></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
