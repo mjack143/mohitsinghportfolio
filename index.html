@@ -26,15 +26,49 @@
     .grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 2rem; }
     .project-tile { padding: 1rem; border: 1px solid #ddd; border-radius: 10px; background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.2s ease; }
     .project-tile:hover { transform: translateY(-4px); }
+    .project-tile a { display: block; margin-top: 0.5rem; color: #0077ff; text-decoration: none; font-size: 0.9rem; }
     ul { margin-top: 1rem; padding-left: 1.5rem; }
     ul li { margin-bottom: 0.5rem; }
     footer { text-align: center; padding: 1.5rem; background: #fafafa; color: #666; font-size: 0.9rem; margin-top: 3rem; border-top: 1px solid #eaeaea; }
     a { color: #0077ff; }
+    .logo {
+      max-height: 36px;
+      width: auto;
+      transition: filter 0.3s ease;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #111;
+        color: #eee;
+      }
+
+      nav {
+        background: #1a1a1a;
+        box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+      }
+
+      .project-tile {
+        background: #1e1e1e;
+        border: 1px solid #333;
+        color: #eee;
+      }
+
+      a {
+        color: #4eaaff;
+      }
+
+      .logo {
+        filter: brightness(0) invert(1);
+      }
+    }
   </style>
 </head>
 <body>
   <nav>
-    <div><strong>My Portfolio</strong></div>
+    <div>
+      <img src="123.png" alt="Mohit Singh Logo" class="logo" />
+    </div>
     <div>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -52,7 +86,6 @@
     <h2>About Me</h2>
     <p>As a Group Account Manager with a proven track record in digital marketing and social media management, I bring a strategic mindset and innovative approach to driving business growth and brand success. My journey from a Senior Social Media Manager to my current role has equipped me with a deep understanding of the digital landscape, enabling me to lead teams effectively and deliver impactful campaigns.</p>
 
-    
     <h3>💡 Expertise & Skills</h3>
     <ul>
       <li>Strategic Account Management</li>
@@ -68,10 +101,35 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="grid">
-      <div class="project-tile">SBI <!-- Add project details/link --></div>
-      <div class="project-tile">Angel One <!-- Add project details/link --></div>
-      <div class="project-tile">CRIF India <!-- Add project details/link --></div>
-      <div class="project-tile">Switzerland Tourism <!-- Add project details/link --></div>
+      <div class="project-tile">
+        <h3>SBI</h3>
+        <a href="https://archive.adgully.com/sbi-fcb-kinnect-make-loans-a-source-of-festive-joy-in-new-campaign-152239.html" target="_blank">Festive Joy Campaign</a>
+        <a href="https://www.youtube.com/watch?v=oSMNseNC_WE" target="_blank">Banao Tyohaar Shandaar</a>
+        <a href="https://www.youtube.com/watch?v=lM2ubthFA4g" target="_blank">#BattingForNariShakti</a>
+        <a href="https://www.youtube.com/watch?v=hfU0shBr5_E" target="_blank">State Bank Day</a>
+        <a href="https://www.adsoftheworld.com/campaigns/ganesh-chaturthi-2024" target="_blank">Ganesh Chaturthi 2024</a>
+        <a href="https://www.adsoftheworld.com/campaigns/durga-puja-2024-9d61d18e-622e-4b09-b91c-0da6dd7b3655" target="_blank">Durga Puja 2024</a>
+        <a href="https://www.youtube.com/watch?v=hNuwbRRvBnI" target="_blank">67th State Bank Day</a>
+      </div>
+
+      <div class="project-tile">
+        <h3>Angel One</h3>
+        <a href="https://archive.adgully.com/angel-one-announces-its-official-partnership-with-ipl-143346.html" target="_blank">IPL Partnership Announcement</a>
+        <a href="https://www.youtube.com/watch?v=XkolLnE0nOA" target="_blank">Muhurat Trading Special</a>
+        <a href="https://www.youtube.com/watch?v=kBgDxSjFnr4" target="_blank">Stock Market Q&A Session</a>
+        <a href="https://archive.adgully.com/angel-one-s-rahohameshasuper-campaign-spotlights-superapp-s-speed-141743.html" target="_blank">#RahoHameshaSuper Campaign</a>
+      </div>
+
+      <div class="project-tile">
+        <h3>CRIF India</h3>
+        <a href="https://www.youtube.com/watch?v=1MuG6RjEGVU" target="_blank">What is a Credit Score? Segment</a>
+      </div>
+
+      <div class="project-tile">
+        <h3>Switzerland Tourism</h3>
+        <a href="https://www.myswitzerland.com/en-in/microsites/in/neeraj-chopras-holiday-in-switzerland/" target="_blank">Neeraj Chopra's Swiss Holiday</a>
+      </div>
+
       <div class="project-tile">Hero Fincorp <!-- Add project details/link --></div>
       <div class="project-tile">Reliance Mall <!-- Add project details/link --></div>
       <div class="project-tile">CII <!-- Add project details/link --></div>
@@ -93,7 +151,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Mohit Singh. All rights reserved.</p>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 </body>
 </html>
