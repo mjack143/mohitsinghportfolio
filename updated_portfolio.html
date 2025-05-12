@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #4A90E2;
+      --secondary-color: #50E3C2;
+      --background-color: #F5F7FA;
+      --text-color: #333333;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header, section, footer { padding: 2rem; max-width: 960px; margin: auto; }
+    h1, h2 { margin-bottom: 1rem; font-weight: 700; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background: var(--primary-color);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin-left: 1.2rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover { color: var(--secondary-color); }
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('pexels-plann-2999237-4549411.jpg') no-repeat center center;
+      background-size: cover;
+      border-radius: 12px;
+      margin-top: 2rem;
+      color: white;
+    }
+
+    .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--secondary-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: var(--primary-color);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .project-tile {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .project-tile:hover { transform: translateY(-4px); }
+    .project-tile a {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    ul { margin-top: 1rem; padding-left: 1.5rem; }
+    ul li { margin-bottom: 0.5rem; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #fafafa;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid #eaeaea;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #111; color: #eee; }
+      nav { background: #1a1a1a; box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05); }
+      .project-tile { background: #1e1e1e; border: 1px solid #333; color: #eee; }
+      a { color: #4eaaff; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><img src="123.png" alt="Mohit Singh Logo" class="logo" style="max-height: 36px;"></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Marketing and Social Media Strategist with 10 Years of Experience</h1>
+    <a href="#projects" class="cta-button">View My Work</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>As a Group Account Manager with a proven track record in digital marketing and social media management, I bring a strategic mindset and innovative approach to driving business growth and brand success...</p>
+    <h3>💡 Expertise & Skills</h3>
+    <ul>
+      <li>Strategic Account Management</li>
+      <li>Digital Marketing & Social Media Strategy</li>
+      <li>Campaign Planning & Execution</li>
+      <li>Team Leadership & Development</li>
+      <li>Data-Driven Decision Making</li>
+      <li>Client Relationship Management</li>
+      <li>Brand Management</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="project-tile"><h3>SBI</h3><a href="#">Festive Joy Campaign</a></div>
+      <div class="project-tile"><h3>Angel One</h3><a href="#">#RahoHameshaSuper</a></div>
+      <div class="project-tile"><h3>CRIF India</h3><a href="#">Credit Score Campaign</a></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="mailto:mjack143@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mohit Singh. All rights reserved.</p>
+  </footer>
+</body>
+</html>
