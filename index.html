@@ -7,10 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --primary-color: #6366F1; /* Indigo */
-      --secondary-color: #22D3EE; /* Cyan */
-      --background-color: #0F172A; /* Dark Blue-Gray */
-      --text-color: #F1F5F9; /* Light Text */
+      --primary-color: #5D5FEF;
+      --secondary-color: #FFA500;
+      --background-color: #FDFCFB;
+      --text-color: #333333;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,8 +39,8 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.5rem 2rem;
-      background: #1a1a1a;
-      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -49,7 +49,7 @@
     nav a {
       margin-left: 1.2rem;
       text-decoration: none;
-      color: #f1f1f1;
+      color: #444;
       font-weight: 600;
       transition: color 0.2s ease;
     }
@@ -61,17 +61,16 @@
     .logo {
       max-height: 36px;
       width: auto;
-      filter: brightness(0) invert(1);
     }
 
     .hero {
       text-align: center;
       padding: 6rem 2rem;
-      background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('pexels-plann-2999237-4549411.jpg') no-repeat center center;
+      background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('pexels-plann-2999237-4549411.jpg') no-repeat center center;
       background-size: cover;
       border-radius: 12px;
       margin-top: 2rem;
-      color: white;
+      color: #222;
     }
 
     .hero h1 {
@@ -84,7 +83,7 @@
       margin-top: 1rem;
       padding: 0.75rem 1.5rem;
       background-color: var(--secondary-color);
-      color: #000;
+      color: #fff;
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
@@ -92,7 +91,6 @@
 
     .cta-button:hover {
       background-color: var(--primary-color);
-      color: #fff;
     }
 
     .grid {
@@ -104,11 +102,10 @@
 
     .project-tile {
       padding: 1rem;
-      border: 1px solid #333;
+      border: 1px solid #ddd;
       border-radius: 10px;
-      background: #1e1e1e;
-      box-shadow: 0 2px 5px rgba(255,255,255,0.05);
-      color: #eee;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       transition: transform 0.2s ease;
     }
 
@@ -119,7 +116,7 @@
     .project-tile a {
       display: block;
       margin-top: 0.5rem;
-      color: #4eaaff;
+      color: #5D5FEF;
       text-decoration: none;
       font-size: 0.9rem;
     }
@@ -136,15 +133,15 @@
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: #1e1e1e;
-      color: #999;
+      background: #fafafa;
+      color: #666;
       font-size: 0.9rem;
       margin-top: 3rem;
-      border-top: 1px solid #333;
+      border-top: 1px solid #eaeaea;
     }
 
     a {
-      color: #4eaaff;
+      color: #5D5FEF;
     }
 
     form {
@@ -155,10 +152,8 @@
     input, textarea {
       margin-bottom: 1rem;
       padding: 0.75rem;
-      border: 1px solid #444;
-      background: #1e1e1e;
+      border: 1px solid #ccc;
       border-radius: 5px;
-      color: #fff;
     }
 
     button {
@@ -172,7 +167,6 @@
 
     button:hover {
       background-color: var(--secondary-color);
-      color: #000;
     }
   </style>
 </head>
