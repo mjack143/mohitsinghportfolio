@@ -7,40 +7,76 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --primary-color: #4A90E2;
-      --secondary-color: #50E3C2;
-      --background-color: #F5F7FA;
-      --text-color: #333333;
+      --primary-color: #6366F1; /* Indigo */
+      --secondary-color: #22D3EE; /* Cyan */
+      --background-color: #0F172A; /* Dark Blue-Gray */
+      --text-color: #F1F5F9; /* Light Text */
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Poppins', sans-serif; background: var(--background-color); color: var(--text-color); line-height: 1.7; }
-    header, section, footer { padding: 2rem; max-width: 960px; margin: auto; }
-    h1, h2 { margin-bottom: 1rem; font-weight: 700; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; background: #ffffff; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); position: sticky; top: 0; z-index: 1000; }
-    nav a { margin-left: 1.2rem; text-decoration: none; color: #444; font-weight: 600; transition: color 0.2s ease; }
-    nav a:hover { color: var(--secondary-color); }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    header, section, footer {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background: #1a1a1a;
+      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin-left: 1.2rem;
+      text-decoration: none;
+      color: #f1f1f1;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--secondary-color);
+    }
+
+    .logo {
+      max-height: 36px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+
     .hero {
       text-align: center;
       padding: 6rem 2rem;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('pexels-plann-2999237-4549411.jpg') no-repeat center center;
+      background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('pexels-plann-2999237-4549411.jpg') no-repeat center center;
       background-size: cover;
       border-radius: 12px;
       margin-top: 2rem;
       color: white;
     }
-    .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
-    .grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 2rem; }
-    .project-tile { padding: 1rem; border: 1px solid #ddd; border-radius: 10px; background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.2s ease; }
-    .project-tile:hover { transform: translateY(-4px); }
-    .project-tile a { display: block; margin-top: 0.5rem; color: #0077ff; text-decoration: none; font-size: 0.9rem; }
-    ul { margin-top: 1rem; padding-left: 1.5rem; }
-    ul li { margin-bottom: 0.5rem; }
-    footer { text-align: center; padding: 1.5rem; background: #fafafa; color: #666; font-size: 0.9rem; margin-top: 3rem; border-top: 1px solid #eaeaea; }
-    a { color: #0077ff; }
-    .logo {
-      max-height: 36px;
-      width: auto;
-      transition: filter 0.3s ease;
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
 
     .cta-button {
@@ -48,24 +84,83 @@
       margin-top: 1rem;
       padding: 0.75rem 1.5rem;
       background-color: var(--secondary-color);
-      color: #fff;
+      color: #000;
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
+
     .cta-button:hover {
       background-color: var(--primary-color);
+      color: #fff;
     }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .project-tile {
+      padding: 1rem;
+      border: 1px solid #333;
+      border-radius: 10px;
+      background: #1e1e1e;
+      box-shadow: 0 2px 5px rgba(255,255,255,0.05);
+      color: #eee;
+      transition: transform 0.2s ease;
+    }
+
+    .project-tile:hover {
+      transform: translateY(-4px);
+    }
+
+    .project-tile a {
+      display: block;
+      margin-top: 0.5rem;
+      color: #4eaaff;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1e1e1e;
+      color: #999;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid #333;
+    }
+
+    a {
+      color: #4eaaff;
+    }
+
     form {
       display: flex;
       flex-direction: column;
     }
+
     input, textarea {
       margin-bottom: 1rem;
       padding: 0.75rem;
-      border: 1px solid #ccc;
+      border: 1px solid #444;
+      background: #1e1e1e;
       border-radius: 5px;
+      color: #fff;
     }
+
     button {
       padding: 0.75rem;
       background-color: var(--primary-color);
@@ -74,42 +169,16 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
     button:hover {
       background-color: var(--secondary-color);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        background: #111;
-        color: #eee;
-      }
-
-      nav {
-        background: #1a1a1a;
-        box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
-      }
-
-      .project-tile {
-        background: #1e1e1e;
-        border: 1px solid #333;
-        color: #eee;
-      }
-
-      a {
-        color: #4eaaff;
-      }
-
-      .logo {
-        filter: brightness(0) invert(1);
-      }
+      color: #000;
     }
   </style>
 </head>
 <body>
   <nav>
-    <div>
-      <img src="123.png" alt="Mohit Singh Logo" class="logo" />
-    </div>
+    <div><img src="123.png" alt="Mohit Singh Logo" class="logo" /></div>
     <div>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -124,12 +193,10 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>As a Group Account Manager with a proven track record in digital marketing and social media management, I bring a strategic mindset and innovative approach to driving business growth and brand success. My journey from a Senior Social Media Manager to my current role has equipped me with a deep understanding of the digital landscape, enabling me to lead teams effectively and deliver impactful campaigns. I'm Meta, HubSpot & LinkedIn Certified and have worked with Agencies like Dentsu and IPG Group.
-    </p>
+    <p>As a Group Account Manager with a proven track record in digital marketing and social media management, I bring a strategic mindset and innovative approach to driving business growth and brand success. My journey from a Senior Social Media Manager to my current role has equipped me with a deep understanding of the digital landscape, enabling me to lead teams effectively and deliver impactful campaigns. I'm Meta, HubSpot & LinkedIn Certified and have worked with Agencies like Dentsu and IPG Group.</p>
 
-    
     <h3>💡 Expertise & Skills</h3>
-    
+    <ul>
       <li>Strategic Account Management</li>
       <li>Digital Marketing & Social Media Strategy</li>
       <li>Campaign Planning & Execution</li>
@@ -172,16 +239,16 @@
         <a href="https://www.myswitzerland.com/en-in/microsites/in/neeraj-chopras-holiday-in-switzerland/" target="_blank">Neeraj Chopra's Swiss Holiday</a>
       </div>
 
-      <div class="project-tile">Hero Fincorp <!-- Add project details/link --></div>
-      <div class="project-tile">Reliance Mall <!-- Add project details/link --></div>
-      <div class="project-tile">CII <!-- Add project details/link --></div>
-      <div class="project-tile">Tata Group <!-- Add project details/link --></div>
-      <div class="project-tile">ZorroSign <!-- Add project details/link --></div>
-      <div class="project-tile">Infovie Solutions <!-- Add project details/link --></div>
-      <div class="project-tile">Bizcyclone Africa <!-- Add project details/link --></div>
-      <div class="project-tile">BTH Group <!-- Add project details/link --></div>
-      <div class="project-tile">Sales Corp Solutions UK <!-- Add project details/link --></div>
-      <div class="project-tile">Paytabs <!-- Add project details/link --></div>
+      <div class="project-tile">Hero Fincorp</div>
+      <div class="project-tile">Reliance Mall</div>
+      <div class="project-tile">CII</div>
+      <div class="project-tile">Tata Group</div>
+      <div class="project-tile">ZorroSign</div>
+      <div class="project-tile">Infovie Solutions</div>
+      <div class="project-tile">Bizcyclone Africa</div>
+      <div class="project-tile">BTH Group</div>
+      <div class="project-tile">Sales Corp Solutions UK</div>
+      <div class="project-tile">Paytabs</div>
     </div>
   </section>
 
@@ -189,7 +256,6 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:mjack143@gmail.com">mjack143@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/mohitnsingh/" target="_blank">mohitnsingh</a></p>
-    <p><!-- Optional: Add contact form embed code or Calendly widget --></p>
   </section>
 
   <footer>
